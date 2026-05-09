@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+            background-color: #f4f7f6;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            background-color: #f4f7f6;
+        }
+        .header {
+            background: #002d5a;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 6px solid #e11a2b;
+        }
+        .header h1 { margin: 0; font-size: 24pt; letter-spacing: 1px; }
+        .header p { margin: 10px 0 0; font-size: 14pt; opacity: 0.8; }
+        
+        .content { padding: 30px; }
+        
+        .item-card {
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            page-break-inside: avoid;
+            border: 1px solid #ddd;
+        }
+        
+        .item-title {
+            background: #004b8d;
+            color: white;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .item-title h2 { margin: 0; font-size: 18pt; }
+        .badge { background: #e11a2b; padding: 5px 12px; border-radius: 4px; font-size: 10pt; font-weight: bold; }
+        
+        .item-body {
+            display: flex;
+            padding: 25px;
+            gap: 25px;
+        }
+        
+        .item-info { flex: 2; }
+        .item-visual { flex: 1; text-align: center; }
+        
+        .img-placeholder {
+            width: 100%;
+            height: 200px;
+            background: #f0f0f0;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 10pt;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            font-size: 10pt;
+        }
+        th { color: #004b8d; width: 35%; background: #f9f9f9; }
+        
+        .description-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #004b8d;
+            margin-bottom: 15px;
+            font-size: 11pt;
+            line-height: 1.4;
+        }
+        
+        .action-btns {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            padding: 10px 18px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 9pt;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .btn-blue { background: #004b8d; color: white; }
+        .btn-outline { border: 1px solid #004b8d; color: #004b8d; }
+        
+        .footer { text-align: center; padding: 20px; color: #777; font-size: 9pt; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Catálogo de Equipos Periféricos y Herramentales</h1>
+        <p>Pérez Escutia José Alfredo | Equipos Herramentales y Periféricos | CECyT 8 "Narciso Bassols"</p>
+    </div>
+    
+    <div class="content">
+
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Chiller Industrial</h2>
+                <span class="badge">Periférico de Enfriamiento</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong> funciona como un sistema de intercambio de calor que utiliza un refrigerante para extraer la energía térmica de un fluido (generalmente agua o glicol) y así enfriar maquinaria o procesos. El ciclo comienza en el evaporador, donde el refrigerante absorbe el calor del fluido de proceso; después, un compresor aumenta la presión de ese gas caliente hacia el condensador, donde el calor se expulsa al exterior (por aire o agua) para que el refrigerante vuelva a estado líquido. Finalmente, al pasar por una válvula de expansión, el refrigerante recupera su baja temperatura para reiniciar el ciclo, permitiendo un enfriamiento constante que es vital para mantener la estabilidad térmica en la producción de materiales.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>se caracteriza por su gran capacidad de enfriamiento en operación continua, el uso de compresores robustos (scroll o tornillo) y un control de temperatura de alta precisión. Su diseño varía entre modelos enfriados por aire o agua, pero todos integran sistemas de seguridad y materiales anticorrosivos para garantizar la estabilidad térmica en procesos industriales exigentes.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$30,000 y $120,000 MXN.D</td></tr>
+                        <tr><th>Consumo de Energía</th><td>5.5 kW - 25 kW (Depende del tonelaje)</td></tr>
+                        <tr><th>Compatibilidad</th><td>Inyectoras, Extrusoras, Sopladoras de película.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://ecochillers.net/que-es-un-chiller/>Ficha Técnica </a>
+                        <a href=https://ecochillers.net/wp-content/uploads/2023/07/Manual-de-Instalacion-Operacion-y-Mantenimiento-Ecochillers.pdf>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                       <img src="https://imgs.search.brave.com/LhgrDzkqMFO6ZRj-rLH3GwyDhjoOHza7vdZMXpCQt_U/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9haXIt/Y29vbGVkLXdhdGVy/LWNoaWxsZXItcGxh/bnQtcGlwZXdvcmst/cGFydC12aWV3LTY5/OTQ2ODU1LmpwZw" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Mezcladora Vertical</h2>
+                <span class="badge">Periférico de Preparación</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong> funciona mediante un sistema de volteo mecánico donde un depósito con dos cilindros unidos en ángulo gira sobre su eje horizontal, provocando que el material se divida y se vuelva a unir continuamente. Este movimiento aprovecha la gravedad para que las partículas se desplacen de forma aleatoria en cada rotación, logrando una mezcla de alta precisión (hasta un 99% de homogeneidad) sin generar fricción excesiva ni calor. Es el equipo estándar para sólidos secos delicados, polvos finos o granulados en industrias donde se requiere una limpieza profunda y no se permite la contaminación entre lotes, ya que su diseño carece de ejes internos que retengan residuos.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>permite un flujo de materiales altamente eficiente y una limpieza total, ya que su diseño interno liso y sin ejes mecánicos elimina los puntos ciegos donde suelen acumularse residuos. Operan mediante un mezclado por difusión que es sumamente suave con las partículas, evitando el desgaste o la ruptura de sólidos frágiles, y requieren un mantenimiento mínimo al no tener sellos ni rodamientos en contacto directo con el producto. Además, su estructura de acero inoxidable suele contar con acabados de grado sanitario, lo que facilita el vaciado rápido por gravedad y las convierte en la opción ideal para procesos que exigen máxima higiene y precisión en la combinación de polvos o granulados.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$45,000 y $150,000 MXN</td></tr>
+                        <tr><th>Consumo de Energía</th><td>3.5 kW - 11 kW</td></tr>
+                        <tr><th>Compatibilidad</th><td>Mezclado de pellet virgen, pigmento y material recuperado.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://www.mezcladorasymolinosindustriales.com.mx/productos-y-servicios/mezcladora-de-pantal%C3%B3n/>Ficha Técnica </a>
+                        <a href=https://ri.uaemex.mx/oca/view/20.500.11799/33561/1/secme-17791.pdf>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                        <img
+src="https://imgs.search.brave.com/uz4ePRrf3Tm9GpHRyoQNcsvotAJi60t9F0XvWnsxkDk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9mb29k/dGVjaHBlcnUuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIz/LzAzL01FWkNMQURP/UkEtREUtUEFOVEFM/T04uanBn" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Peletizadora</h2>
+                <span class="badge">Herramental / Post-procesamiento</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong> funciona comprimiendo material procesado, como polvos o residuos plásticos, a través de una matriz con orificios mediante el uso de rodillos de alta presión que obligan a la masa a tomar una forma cilíndrica compacta. Durante este proceso, la fricción genera calor que ayuda a aglutinar las partículas (especialmente en termoplásticos o biomasa), y una vez que el material sale por el otro lado de la matriz, unas cuchillas rotativas cortan los filamentos a la longitud deseada para crear los pellets finales. Este sistema es esencial para densificar materiales, facilitar su transporte y asegurar una alimentación uniforme en procesos posteriores como la inyección o extrusión, garantizando que el producto tenga una forma y tamaño estandarizados.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>robusta cámara de compactación, donde la interacción entre los rodillos prensa y la matriz (plana o circular) determina la densidad y el diámetro del pellet, permitiendo procesar diversos materiales con alta eficiencia. Cuentan con un sistema de cuchillas de corte ajustable que define la longitud exacta del producto final, además de motores de alta potencia diseñados para soportar el torque necesario durante la extrusión. Su diseño suele incluir sistemas de lubricación constante y protecciones térmicas, ya que operan bajo condiciones intensas de presión y fricción, lo que las hace fundamentales para transformar materiales voluminosos en materia prima estandarizada, fácil de transportar y dosificar en procesos industriales.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$35,000 hasta los $120,000 MXN</td></tr>
+                        <tr><th>Consumo de Energía</th><td>10 kW - 30 kW</td></tr>
+                        <tr><th>Compatibilidad</th><td>Líneas de reciclaje y extrusión de compuestos.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://www.cosmos.com.mx/wiki/peletizadoras-48jg.html>Ficha Técnica</a>
+                        <a href=https://www.aviariopicaflor.cl/wp-content/uploads/2021/07/Instructivo-Maquina-Peletizadora-2023-1.pdf>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                        <img
+src="https://imgs.search.brave.com/0gzYTOI6zADLd5_504jtafwzl5bTTQEMulugna8QSUc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cGVsZXQuY29tLmJy/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIy/LzEwL1BFTEVUSVpB/RE9SQS1UT0NBTlRJ/TlMtRVNQRUNJQUwt/MS0xMDI0eDc2OC5q/cGVn" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Tolva Secadora</h2>
+                <span class="badge">Periférico de Secado</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong> funciona eliminando la humedad de los materiales granulares mediante la inyección de aire caliente por la base del depósito, el cual asciende a través de la masa de material para absorber el vapor de agua y expulsarlo por la parte superior. Este proceso es fundamental para materiales higroscópicos, ya que el aire se distribuye de manera uniforme gracias a un difusor interno, asegurando que cada pellet alcance la temperatura y sequedad adecuadas antes de pasar a la garganta de la máquina de inyección o extrusión. Al estar instalada directamente sobre el equipo de procesamiento, garantiza que el material no se vuelva a contaminar con la humedad ambiental, evitando así defectos estéticos o estructurales en las piezas finales como burbujas o manchas de plata.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>destacan por su diseño térmico aislado que evita la pérdida de calor hacia el exterior, permitiendo que el flujo de aire caliente mantenga una temperatura constante y controlada mediante un panel digital de precisión. Cuentan con un difusor de aire en forma de paraguas ubicado en la base que garantiza una distribución radial uniforme, eliminando puntos fríos y asegurando que todo el material se seque de manera homogénea antes de entrar a la máquina. Además, su estructura suele ser de acero inoxidable para evitar la contaminación del polímero, incluyen una mirilla de vidrio para monitorear el nivel de carga y poseen una base abatible que facilita la limpieza rápida durante los cambios de material o color.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$14,500 a $20,000 MXN</td></tr>
+                        <tr><th>Consumo de Energía</th><td>2.2 kW - 15 kW</td></tr>
+                        <tr><th>Compatibilidad</th><td>Cualquier inyectora que trabaje materiales higroscópicos (ABS, PC, Nylon).</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://yushineplastics.com/es/tolvas-de-secado/>Ficha Técnica</a>
+                        <a href=https://exafan.com/sites/default/files/2023-07/Manual_TOLVA%20SECA%20H%C3%9AM.%20POSEIDON%20WTF%20NX%20DOBLE%20V(01)_ESP_13032023.pdf>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                                               <img
+src="https://imgs.search.brave.com/tmWVf2b8h4msAG4ELHpqllyL6looIcYp-vuA2h17rGU/rs:fit:860:0:0:0/g:ce/aHR0cDovL21vbGRp/bmdtYWNoaW5lcGFy/dC5jb20uYXIvcHJv/ZHVjdHMvOC0xLWRy/eWluZy1ob3BwZXJf/MDEuanBn" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Molino Granulador</h2>
+                <span class="badge">Periférico de Recuperación</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong> funciona mediante una cámara de corte donde una serie de cuchillas rotativas, montadas sobre un eje central, giran a alta velocidad y pasan a una distancia mínima de un juego de cuchillas fijas, creando un efecto de cizalla que fragmenta el plástico. El material se tritura progresivamente hasta que los trozos alcanzan un tamaño lo suficientemente pequeño para atravesar los orificios de una criba o rejilla inferior, la cual actúa como filtro para asegurar la uniformidad del grano resultante. Este sistema es esencial en la industria de la transformación para el reciclaje de coladas, purgas o piezas defectuosas, permitiendo reintegrar el material triturado directamente al proceso de producción y reducir significativamente el desperdicio.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>cámara de corte robusta con cuchillas fabricadas en aleaciones de acero de alta resistencia al impacto, diseñadas con diferentes configuraciones (tipo tijera, escalonadas o de garra) para adaptarse a la dureza de diversos polímeros. Cuentan con una criba intercambiable que permite ajustar el diámetro del grano final según las necesidades del proceso, además de un diseño de fácil apertura que agiliza la limpieza y el cambio de cuchillas durante el mantenimiento. Para garantizar la seguridad operativa, integran volantes de inercia que optimizan el consumo energético y sistemas de aislamiento acústico para reducir el ruido generado durante la trituración, siendo fundamentales para la recuperación eficiente de coladas y piezas defectuosas a pie de máquina.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$85,000 y $135,000 MXN</td></tr>
+                        <tr><th>Consumo de Energía</th><td>4.5 kW - 18 kW</td></tr>
+                        <tr><th>Compatibilidad</th><td>Inyectoras y Sopladoras.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://maqui-chen.com/productos/accesorios/molinos-de-pie/>Ficha Técnica</a>
+                        <a href=https://www.dismet.com/product/equipos-de-trituracion-mineria-y-agregados-mandibula-cono-impactor-horizontal-impactor-vertical-molino-granulador/molino-granulador/>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                         <img
+src="https://imgs.search.brave.com/Y6txXHUIhiSPKaZyGwpsSGG7aHfcj9_OgX7qa27SYMY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hbmRl/eHBvcnQuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE4LzAz/L2dydi12YXJpYW50/LjUyOGY3YTA2LTMw/MHgzMDAuanBn" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Alimentador por Vacío</h2>
+                <span class="badge">Periférico de Alimentación</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong>funciona mediante una bomba o motor que genera una presión negativa dentro de una cámara de recepción, creando una corriente de aire que succiona el material granulado o en polvo desde un contenedor externo a través de una manguera de transporte. Una vez que el material llega a la cámara, un filtro separa los sólidos del aire, permitiendo que el producto se acumule hasta que un sensor de nivel o un temporizador detiene el vacío, abriendo una compuerta de descarga en la base para depositar el material directamente en la tolva de la máquina. Este sistema automatizado elimina la carga manual pesada, reduce el desperdicio por derrames y evita la contaminación por polvo en el ambiente de trabajo, asegurando un suministro constante y limpio de materia prima hacia la línea de producción.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>diseño modular y compacto que permite instalarlos directamente sobre tolvas o máquinas de procesamiento, eliminando la necesidad de estructuras de soporte voluminosas y facilitando la automatización del suministro de materiales. Cuentan con un sistema de limpieza de filtro automático, generalmente mediante pulsos de aire comprimido, que garantiza una succión constante y evita que el polvo fino obstruya el flujo de transporte durante ciclos prolongados. Su estructura de acero inoxidable con cierres rápidos permite un desarmado sencillo para la limpieza, mientras que sus controles digitales integrados ofrecen ajustes precisos de tiempo de carga y descarga, convirtiéndolos en una solución higiénica y eficiente que mejora la seguridad laboral al evitar el manejo manual de sacos a grandes alturas.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$35,000 hasta los $70,000 MXN,</td></tr>
+                        <tr><th>Consumo de Energía</th><td>1.1 kW - 2.5 kW</td></tr>
+                        <tr><th>Compatibilidad</th><td>Tolvas de inyectoras, extrusoras y mezcladoras.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://sanyuantangcn.com/es/blog/vacuum-feeding-machine-parts-and-working.html>Ficha Técnica</a>
+                        <a href=https://manuals.plus/es/zooplus/noma-automatic-feeder-manual>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                        <img
+src="https://imgs.search.brave.com/XjGbt9kbNXjLWAk7s4WW-QIaGOxeux91ILT-5kELCXo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zLmFs/aWNkbi5jb20vQHNj/MDQva2YvSDgyNzY4/Yjc3OTRlMDQ0MTY5/YTQ5ODQyMmM0NzEz/ODI0ZC5qcGdfMzAw/eDMwMC5qcGc" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Controlador de Temperatura de Molde</h2>
+                <span class="badge">Periférico de Control Térmico</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong> funciona mediante un circuito cerrado donde una bomba impulsa un fluido térmico (agua o aceite) hacia los canales internos del molde para estabilizar su temperatura. El sistema utiliza resistencias eléctricas para calentar el fluido cuando el molde está frío y un intercambiador de calor conectado a una red de agua industrial para enfriarlo cuando el calor del plástico fundido supera el límite programado. Un sensor de temperatura monitorea el retorno del fluido y envía señales a un control digital PID, el cual activa automáticamente las resistencias o las válvulas de enfriamiento para mantener el equilibrio térmico con una precisión de $\pm 1 \text{°C}$.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>controlador de temperatura de molde incluyen su sistema de control PID, que permite una gestión ultraprecisa del calor mediante algoritmos que anticipan las variaciones de temperatura, y su intercambiador de calor de alta eficiencia, diseñado para enfriar el fluido rápidamente cuando el proceso lo requiere. Estos equipos están equipados con bombas de servicio pesado capaces de mantener flujos turbulentos dentro del molde para maximizar la transferencia térmica, además de contar con múltiples protecciones de seguridad, como sensores de bajo nivel de fluido, alarmas de sobrecalentamiento y relevadores de sobrecarga para el motor. Su construcción en materiales resistentes a la corrosión, como el acero inoxidable o bronce, asegura una larga vida útil, mientras que su panel de control digital ofrece una interfaz clara para monitorear presiones, temperaturas de salida y retorno en tiempo real.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$75,000 y $125,000 MXN.</td></tr>
+                        <tr><th>Consumo de Energía</th><td>6 kW - 12 kW</td></tr>
+                        <tr><th>Compatibilidad</th><td>Moldes de inyección técnica.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://www.tigerkj.com/es/products/temperature-controlling-series/mold-temp-controller-series>Ficha Técnica</a>
+                        <a href=https://www.privarsa.com.mx/wp-content/uploads/2018/02/Manual-general-de-controles-polimold..pdf>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                        class="img-placeholder">
+                        <img
+src="https://imgs.search.brave.com/y3PrlnoEUet4yimDmjB8ILw_Ox0xGJQwwjaYxMMkx00/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bW9sZG1hc3RlcnMu/Y29tL3NpdGVzL2Rl/ZmF1bHQvZmlsZXMv/c3R5bGVzL2V4L3B1/YmxpYy8yMDIwLTEw/L01vbGQtTWFzdGVy/cy1UZW1wTWFzdGVy/LU1ULUhvdC1SdW5u/ZXItVGVtcGVyYXR1/cmUtQ29udHJvbGxl/ci5qcGc_aXRvaz10/R3pGN09INQ" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Dosificador Gravimétrico</h2>
+                <span class="badge">Periférico de Dosificación</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong> funciona mediante el principio de pérdida de peso, utilizando celdas de carga de alta precisión para pesar continuamente el material contenido en su tolva mientras se alimenta al proceso. A diferencia de los sistemas volumétricos, este equipo monitorea en tiempo real cuánto peso sale por segundo, permitiendo que un controlador inteligente ajuste automáticamente la velocidad del tornillo o la válvula para compensar variaciones en la densidad o fluidez del polímero. Si el sistema detecta que el material está cayendo más rápido o más lento de lo programado, corrige la rotación instantáneamente para mantener una dosificación exacta, lo que garantiza una mezcla homogénea y un ahorro significativo de aditivos o pigmentos costosos al evitar el sobrellenado.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>celda de carga de alta resolución y su sistema de pesaje dinámico, los cuales permiten una precisión extrema al medir la pérdida de peso real del material en milisegundos. Están diseñados con motores de velocidad variable controlados por algoritmos avanzados que se autoajustan automáticamente para compensar cambios en la densidad aparente o la forma del grano, eliminando la necesidad de calibraciones manuales constantes. Su estructura suele ser modular para facilitar la limpieza rápida durante cambios de color y está fabricada en acero inoxidable para evitar la contaminación, integrando además paneles de control con pantallas táctiles que permiten almacenar recetas, monitorear el consumo de materia prima en tiempo real y generar reportes de producción exactos.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$110,000 y $160,000 MXN</td></tr>
+                        <tr><th>Consumo de Energía</th><td>0.5 kW - 1.5 kW</td></tr>
+                        <tr><th>Compatibilidad</th><td>Extrusión y soplado multicapa.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://epsa.mx/dosificador-de-tornillo-o-gusano/dosificador-gravimetrico/>Ficha Técnica</a>
+                        <a href=https://www.enginplast.com/es/portfolio-articoli/dosificador-gravimetrico-cws-2023/>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                         <img
+src="https://imgs.search.brave.com/y3PrlnoEUet4yimDmjB8ILw_Ox0xGJQwwjaYxMMkx00/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bW9sZG1hc3RlcnMu/Y29tL3NpdGVzL2Rl/ZmF1bHQvZmlsZXMv/c3R5bGVzL2V4L3B1/YmxpYy8yMDIwLTEw/L01vbGQtTWFzdGVy/cy1UZW1wTWFzdGVy/LU1ULUhvdC1SdW5u/ZXItVGVtcGVyYXR1/cmUtQ29udHJvbGxl/ci5qcGc_aXRvaz10/R3pGN09INQ" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Robot Cartesiano</h2>
+                <span class="badge">Periférico de Automatización</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong> funciona mediante el movimiento lineal de sus ejes a través de los tres planos del espacio (X, Y y Z), los cuales están dispuestos de forma perpendicular entre sí siguiendo el sistema de coordenadas cartesianas. Cada eje está equipado con un actuador —generalmente un servomotor o motor a pasos acoplado a un husillo de bolas o una correa dentada— que desplaza una corredera en una trayectoria recta y precisa. El controlador del robot coordina estos movimientos para posicionar una herramienta o pinza en un punto exacto del área de trabajo, lo que permite realizar tareas de "pick and place", paletizado o ensamble con una alta repetibilidad y rigidez estructural. Al moverse solo de forma lineal, su programación es mucho más sencilla en comparación con los robots articulados, optimizando la velocidad de respuesta en líneas de producción automatizadas.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>funciona mediante el movimiento lineal de sus ejes a través de los tres planos del espacio (X, Y y Z), los cuales están dispuestos de forma perpendicular entre sí siguiendo el sistema de coordenadas cartesianas. Cada eje está equipado con un actuador —generalmente un servomotor o motor a pasos acoplado a un husillo de bolas o una correa dentada— que desplaza una corredera en una trayectoria recta y precisa. El controlador del robot coordina estos movimientos para posicionar una herramienta o pinza en un punto exacto del área de trabajo, lo que permite realizar tareas de "pick and place", paletizado o ensamble con una alta repetibilidad y rigidez estructural. Al moverse solo de forma lineal, su programación es mucho más sencilla en comparación con los robots articulados, optimizando la velocidad de respuesta en líneas de producción automatizadas.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$180,000 y $350,000 MXN.</td></tr>
+                        <tr><th>Consumo de Energía</th><td>1.5 kW - 4 kW</td></tr>
+                        <tr><th>Compatibilidad</th><td>Máquinas de inyección.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://elecproy.com/es/blog/robot-cartesiano-que-son-caracteristicas-tipos-aplicaciones/>Ficha Técnica</a>
+                        <a href=https://www.upt.edu.mx/Contenido/Investigacion/Contenido/TESIS/MAC/2016/MAC_T_2016_02_MBN.pdf>Manual de Usuario</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                         <img
+src="https://imgs.search.brave.com/Tr_t3hT9JrPoey-TdccrKTujfa5yWE8bf8K4d53flvU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sYXJy/YWlvei5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjAvMDQv/SU1HX0lBSV9Sb2Jv/dF9DYXJ0ZXNpYW5f/WFlaX1hZQi1aQlQt/MS5wbmc" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Cinta Transportadora</h2>
+                <span class="badge">Periférico de Manejo</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong> funciona mediante un sistema de poleas que mantienen en tensión una banda continua de material flexible, la cual es impulsada por un motor eléctrico conectado a la polea motriz. El movimiento se genera por la fricción entre esta polea y la banda, mientras que una serie de rodillos de soporte distribuidos a lo largo del bastidor minimizan la resistencia y evitan que la cinta se cuelgue bajo el peso de la carga. El material se deposita en un extremo del sistema y es desplazado de forma lineal y constante hacia el punto de descarga, permitiendo un flujo de producción ininterrumpido. Este mecanismo incluye dispositivos de tensión para asegurar que la banda no patine y guías laterales que mantienen el material alineado, optimizando el transporte de piezas plásticas, materia prima o productos terminados de manera automática y eficiente.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>bastidor robusto, generalmente fabricado en aluminio extruido o acero inoxidable, que proporciona la rigidez necesaria para soportar cargas constantes sin deformarse. La banda puede estar hecha de diversos materiales como PVC, poliuretano o eslabones modulares, seleccionados según la resistencia química o térmica requerida por el producto. Estos equipos integran motores con reductores de velocidad y variadores de frecuencia que permiten ajustar el ritmo de avance de forma precisa, adaptándose a la velocidad de salida de máquinas inyectoras o extrusoras. Además, cuentan con sistemas de centrado automático y tensión ajustable para prevenir el desgaste prematuro, así como guardas de seguridad y botones de paro de emergencia, lo que garantiza un transporte de materiales seguro, silencioso y con un consumo energético mínimo.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$30,000 a $55,000 MXN.</td></tr>
+                        <tr><th>Consumo de Energía</th><td>0.3 kW - 0.75 kW</td></tr>
+                        <tr><th>Compatibilidad</th><td>Salida de inyectoras y sopladoras.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://es.scribd.com/document/395826613/Esquema-General-de-La-Cinta-Transportadora>Ficha Técnica</a>
+                        <a href=https://robotunits.com/wp-content/uploads/2022/10/Manual-de-instrucciones-cinta-transportadora_ES.pdf>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                       <img
+src="https://imgs.search.brave.com/FKvHyGHT1lA4MM-o3I3A-YSXknY5xojGhtGxpfWquL0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YWNlcm9tYWZlLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/My8wNy9jaW50YS10/cmFuc3BvcnRhZG9y/YS0xMDI0eDUxMi5q/cGc" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Deshumidificador de Rueda</h2>
+                <span class="badge">Periférico de Secado Profundo</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong> funciona mediante un proceso de adsorción continua utilizando una rueda giratoria compuesta por capas de materiales higroscópicos, como el gel de sílice. El aire húmedo del proceso es impulsado a través de una sección de la rueda (zona de deshumidificación), donde el material desecante atrapa las moléculas de agua, permitiendo que el aire salga seco hacia la tolva de secado o el área de producción. Mientras la rueda gira lentamente, la sección saturada de humedad pasa a una zona de regeneración, donde una corriente de aire caliente (aire de reactivación) circula en sentido contrario para evaporar el agua retenida en el desecante y expulsarla al exterior. Este ciclo rotativo permite que una parte de la rueda esté siempre secando el aire mientras la otra se limpia, garantizando un punto de rocío (dew point) extremadamente bajo y constante, ideal para procesar polímeros higroscópicos como el PET o el nylon que requieren una eliminación de humedad profunda antes de ser moldeados.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>punto de rocío (dew point) constante y bajo, a menudo inferior a los -40 °C, lo que lo hace indispensable para materiales altamente higroscópicos. A diferencia de los sistemas de torres desecantes dobles, su rueda rotativa de panal permite un flujo de aire uniforme sin picos de humedad durante los cambios de ciclo, ofreciendo una mayor eficiencia energética al requerir temperaturas de regeneración más bajas. Estos equipos destacan por su diseño compacto y mecánico simple, con pocas piezas móviles, lo que reduce la necesidad de mantenimiento y evita el desgaste de válvulas neumáticas. Además, suelen integrar controles inteligentes con microprocesador que ajustan la velocidad de rotación y la potencia de calentamiento en función de la humedad ambiental, garantizando un secado preciso y protegiendo el material de una sobreexposición térmica.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$110,000 a $240,000 MXN.</td></tr>
+                        <tr><th>Consumo de Energía</th><td>5 kW - 20 kW</td></tr>
+                        <tr><th>Compatibilidad</th><td>PET, PC, PBT y materiales de ingeniería.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://www.jalonzeolite.com/es/how-does-a-desiccant-dehumidifier-work/>Ficha Técnica</a>
+                        <a href=https://h2otek.com/tienda/wp-content/uploads/2024/02/MANUAL-TECNICO-DESHUMIDIFICADOR-DESECANTE-DDI0_26L.pdf>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                        <img
+src="https://imgs.search.brave.com/FMTue3HzhmRyeVTwa6Rz31-TBCBdIo9y8W1m3lsOrNw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5jaHVrb3VwbHVz/LmNvbS91cGxvYWQv/Q180NzU1L2ZpbGUv/MjAyNTExMjgvMzkz/OTMwMDRjM2MxY2Yz/ODQwZTEwYTg4NGRi/Y2ZjMGUucG5nPzE3/Mzg5OTIwNDg" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Dado de extrusión</h2>
+                <span class="badge">Herramental de Extrusión</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong>funciona mediante la recepción del flujo de polímero fundido desde la extrusora para distribuirlo y comprimirlo a través de canales internos diseñados con una geometría específica, asegurando que el material mantenga una velocidad y presión uniformes antes de salir por la boquilla final. Durante este proceso, el fundido atraviesa una etapa de transición donde se adapta a la forma del perfil deseado, pasando por una zona de compresión que elimina irregularidades y culminando en los labios del dado, donde adquiere sus dimensiones definitivas mientras se compensa el fenómeno de hinchamiento del extruido ($die\ swell$). El control térmico es crítico en todo el mecanismo, por lo que el dado integra resistencias eléctricas de alta precisión que mantienen la viscosidad óptima del polímero, garantizando que el perfil, tubo o lámina resultante presente una superficie lisa y propiedades mecánicas constantes.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>geometría interna de flujo, diseñada con curvas suaves para evitar zonas muertas y asegurar que el polímero mantenga una velocidad uniforme, así como su fabricación en aceros aleados de alta resistencia con recubrimientos de cromo o níquel para minimizar la fricción y el desgaste abrasivo. Estos herramentales cuentan con un sistema de calefacción por zonas, utilizando resistencias eléctricas y termopares que permiten un control térmico preciso para gestionar la viscosidad del material según el tipo de termoplástico procesado. Además, disponen de labios ajustables mediante pernos de precisión que permiten calibrar el espesor de la pared en tiempo real y están diseñados para compensar mecánicamente el hinchamiento del extruido ($die\ swell$), garantizando que el producto final cumpla con las tolerancias dimensionales y el acabado superficial exigido por las normas industriales.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$120,000 a más de $350,000 MXN.</td></tr>
+                        <tr><th>Consumo de Energía</th><td>2 y 8 kW por hora</td></tr>
+                        <tr><th>Compatibilidad</th><td>Extrusoras de película, lámina y tubería.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://www.pt-mexico.com/columnas/extrusion-siga-estos-consejos-y-obtenga-el-diseno-perfecto-para-el-dado-de-un-perfil>Ficha Técnica</a>
+                                           </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                                                <img
+src="https://imgs.search.brave.com/c-D5Axk29xSVamqrFKoawhCkrbjSvLn1U7M9H1n6Vb8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMm40/d2I5b3JwMXZ0YS5j/bG91ZGZyb250Lm5l/dC9jbXMvYnJhbmQv/cHQtbWV4LzIwMjMt/cHQtbWV4L2d1aWxs/LmpwZzttYXhXaWR0/aD0zODU" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Detector de Metales en Canal</h2>
+                <span class="badge">Periférico de Seguridad</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo sirve?:</strong>funciona mediante el principio de inducción electromagnética, utilizando un sistema de bobinas equilibradas para inspeccionar el material que pasa a través de su apertura. El equipo genera un campo magnético alterno de alta frecuencia dentro del túnel; cuando una partícula metálica —ya sea ferrosa, no ferrosa o acero inoxidable— atraviesa este campo, induce una pequeña corriente eléctrica que genera una perturbación en el equilibrio magnético. Esta señal es captada por bobinas receptoras, procesada digitalmente para filtrar el "efecto producto" (interferencias causadas por la humedad o conductividad del propio material) y activa instantáneamente un mecanismo de alarma o rechazo. En la industria del plástico, estos detectores se instalan sobre cintas transportadoras o a la salida de molinos para identificar fragmentos de maquinaria, tornillos o alambres, enviando una señal para detener la cinta o activar una compuerta que desvía el material contaminado, protegiendo así la integridad de los husillos y dados de extrusión.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>sensibilidad multiespectral que le permite identificar partículas ferrosas, no ferrosas y de acero inoxidable de hasta 0.5 mm, además de una compensación inteligente del efecto producto para ignorar interferencias causadas por la conductividad de ciertos aditivos o pigmentos plásticos. Estos equipos están construidos con marcos de acero inoxidable robustos (clasificación IP66 o IP69K) para resistir ambientes industriales polvorientos y cuentan con un panel de control digital que almacena múltiples recetas de productos para una configuración rápida. Su diseño de bobina equilibrada garantiza una detección uniforme en toda la apertura del túnel, integrando sistemas de comunicación industrial para conectarse con unidades de rechazo automático, como brazos neumáticos, soplos de aire o paros de emergencia de la banda, asegurando que ningún contaminante llegue a dañar los componentes internos de las extrusoras o inyectoras.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$230,000 y $420,000 MXN.</td></tr>
+                        <tr><th>Consumo de Energía</th><td>0.5 kW</td></tr>
+                        <tr><th>Compatibilidad</th><td>Líneas de alimentación de resina.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://www.ipc.com.mx/pi-detectores-de-metales-wndc.html>Ficha Técnica </a>
+                        <a href=https://cdn.tvc.mx/media/669332/ZKTeco-D2180-Arco-detector-de-metales-Ficha-Manual-Usuario-Espa%C3%B1ol.pdf>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                         <img
+src="https://imgs.search.brave.com/_ljpKtq_iIVLZmuPiuP9EB3ine5P1gM7Tv5sN87hNcA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bWluZWJlYS1pbnRl/Yy5jb20vZmlsZWFk/bWluL19wcm9jZXNz/ZWRfLzgvZi9jc21f/cGlwZWxpbmVfbWV0/YWxfZGV0ZWN0b3Jf/ZWQ2MzhiNWViYy5w/bmc" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Torre de Enfriamiento</h2>
+                <span class="badge">Periférico de Planta</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong>funciona mediante el principio de enfriamiento evaporativo, donde el agua caliente proveniente del proceso industrial se distribuye en la parte superior y se pulveriza sobre un material de relleno para maximizar su superficie de contacto con el aire. Mientras el agua desciende por gravedad, un ventilador genera un flujo de aire constante que provoca la evaporación de una pequeña fracción del líquido, proceso que absorbe el calor sensible del resto del agua y reduce su temperatura significativamente. El aire caliente y húmedo se expulsa hacia la atmósfera, mientras que el agua enfriada se recolecta en una balsa inferior para ser bombeada de regreso a los intercambiadores de calor o camisas de enfriamiento de la maquinaria, manteniendo así un ciclo continuo de regulación térmica que protege la integridad de los equipos y la estabilidad de la producción.                    </div>
+                    <table>
+                        <tr><th>Características</th><td>construcción en materiales resistentes a la corrosión, como fibra de vidrio (PRFV) o acero galvanizado, y un relleno de alta eficiencia fabricado comúnmente en PVC para maximizar el área de transferencia térmica entre el agua y el aire. Están equipadas con ventiladores axiales o centrífugos diseñados para mover grandes volúmenes de aire con un bajo consumo energético, además de eliminadores de rocío que evitan que el agua se escape en forma de niebla hacia la atmósfera. Su diseño robusto incluye una balsa de recolección de agua con sistemas de purga para controlar la acumulación de sales y minerales, así como motores con protección IP55 para operar en condiciones de alta humedad, garantizando una disipación de calor constante y eficiente para los procesos de transformación de plásticos.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$250,000 y $550,000 MXN</td></tr>
+                        <tr><th>Consumo de Energía</th><td>1.5 kW - 10 kW</td></tr>
+                        <tr><th>Compatibilidad</th><td>Sistemas hidráulicos de máquinas e intercambiadores.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://spxcooling.com//wp-content/uploads/sp_MD-TS-17A.pdf>Ficha Técnica</a>
+                        <a href=https://teiett.com/blog-como-funciona-una-torre-de-enfriamiento/>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                        <img
+src="https://imgs.search.brave.com/UfKNkz_QVllSnib8hTATgQ_SH-W7JS9qj0glmjXMjVk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZnJpb3Rlay5jb20v/dG9ycmVzL2ltYWdl/bmVzL3RvcnJlX2Rl/X2VuZnJpYW1pZW50/b190aXBvX2JvdGVs/bGFfNTAuanBn" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Compresor de Aire</h2>
+                <span class="badge">Periférico de Planta</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong> funciona aspirando aire del ambiente a presión atmosférica para luego reducir su volumen mediante un mecanismo físico, lo que aumenta significativamente su presión según la Ley de Boyle. El proceso comienza cuando un motor (eléctrico o de combustión) activa el elemento de compresión; en los modelos de pistón, este se desplaza hacia abajo para succionar aire a través de una válvula de entrada y luego sube para comprimirlo contra la culata, mientras que en los de tornillo, dos rotores entrelazados atrapan y desplazan el aire hacia espacios cada vez más reducidos. Una vez comprimido, el aire pasa por una válvula de retención hacia un tanque de almacenamiento o "pulmón", donde se acumula para su uso posterior. Este tanque no solo actúa como reserva, sino que también permite que el aire se enfríe y que la humedad se condense para ser drenada, garantizando un flujo de aire estable y con la energía mecánica necesaria para accionar herramientas neumáticas, pistones o sistemas de soplado en la industria.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>capacidad de desplazamiento y presión, medida generalmente en CFM (pies cúbicos por minuto) y PSI, lo que determina cuántas herramientas o máquinas puede alimentar simultáneamente. Están equipados con un tanque de almacenamiento (pulmón) fabricado en acero al carbono con válvulas de seguridad y drenajes automáticos para gestionar la condensación de agua. Los modelos modernos incorporan sistemas de enfriamiento, ya sean por aire o aceite, y filtros de admisión de alta eficiencia para evitar que partículas de polvo dañen los componentes internos. Además, cuentan con un presostato o panel de control digital que arranca y detiene el motor automáticamente para mantener la presión en un rango óptimo, garantizando una operación segura y eficiente en el suministro de energía neumática para la planta.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$300,000 o $550,000 MXN</td></tr>
+                        <tr><th>Consumo de Energía</th><td>11 kW - 45 kW</td></tr>
+                        <tr><th>Compatibilidad</th><td>Sopladoras, actuadores y limpieza.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://www.truper.com/ficha_tecnica/Compresor-de-aire-de-240-lts-horizontal.html>Ficha Técnica</a>
+                        <a href=https://dogotuls.com.mx/media/manuales/MN-ZM7003-COMPRESOR%20DE%20AIRE-C.pdf>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                         <img
+src="https://imgs.search.brave.com/NHiQJsOhHEUdwmhwaSlGNetNnhInhroQWyY4P4iDg6g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvOGVj/ZGQ2ZmItZGZmMy00/YjlkLWE2NWYtZDkw/NjllMmVlNjMwLjY4/ZjI1ZGU3YjVhNjA5/OTc1MzU5NjcwOGI5/NmUxMDJlLmpwZWc_/b2RuSGVpZ2h0PTU4/MCZvZG5XaWR0aD01/ODAmb2RuQmc9RkZG/RkZG" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Tina de Vacío</h2>
+                <span class="badge">Herramental de Extrusión</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong>funciona mediante la combinación de presión negativa y enfriamiento por agua para darle su forma final y dimensiones precisas a un perfil o tubo de plástico que acaba de salir del dado de la extrusora. El proceso ocurre dentro de una cámara hermética donde se genera un vacío parcial mediante bombas especiales; este vacío crea una diferencia de presión que "succiona" las paredes del polímero caliente hacia afuera, obligándolas a expandirse y ajustarse contra las paredes internas de un calibrador o herramental metálico. Al mismo tiempo, el producto es rociado con agua fría o sumergido completamente en ella para solidificar el material rápidamente mientras mantiene la forma impuesta por el vacío. A medida que el tubo avanza por la tina, atraviesa una serie de sellos de goma que mantienen la estanqueidad de la cámara, permitiendo que el material pase de un estado semifundido a uno rígido y dimensionalmente estable antes de llegar a la etapa de corte.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>sistema de calibración y enfriamiento crítico donde el perfil o tubo de plástico caliente proveniente de la extrusora ingresa a una cámara hermética de acero inoxidable sometida a una presión negativa controlada por bombas de vacío, lo cual genera un diferencial de presión que expande las paredes del polímero aún blando contra un calibrador de precisión para definir sus dimensiones externas exactas. Mientras este vacío mantiene la forma geométrica, un sistema de boquillas de aspersión o un baño de inmersión proyecta agua fría sobre el material para extraer el calor de manera uniforme, logrando una solidificación rápida que fija la estructura molecular y garantiza la estabilidad dimensional del producto antes de que los sellos de salida permitan su paso hacia la siguiente etapa de la línea de producción.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$350,000 y $750,000 MXN</td></tr>
+                        <tr><th>Consumo de Energía</th><td>3 kW - 7 kW</td></tr>
+                        <tr><th>Compatibilidad</th><td>Extrusión de tubos y perfiles.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://es.scribd.com/document/642150084/FICHA-TECNICA>Ficha Técnica</a>
+                        <a href=https://es.scribd.com/document/642150084/FICHA-TECNICA>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                       <img
+src="https://imgs.search.brave.com/_H36GdxWChcJiDEIyDs4cZ0c2nBSQPiRE9GclXGSbxY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTA0/MTA1NTM1L2VzL2Zv/dG8vcGFydGUtZGUt/bGEtZGVzdGlsZXIl/QzMlQURhLWRlLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1B/UkpJbzVZTDVwVFg5/QnpTZ0QzbzFIRDVj/RDZReTNuektFWkxq/YmhmVHRrPQ" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Separador de Coladas</h2>
+                <span class="badge">Periférico de Clasificación</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo sirve?:</strong>funciona mediante la diferencia de peso, tamaño o geometría entre la pieza terminada y el canal de alimentación (colada) para automatizar su clasificación a la salida de una máquina de inyección de plásticos. El método más común utiliza un tambor giratorio con una separación ajustable: el material cae de la banda transportadora hacia el tambor, donde las piezas pequeñas se filtran a través de las rendijas hacia un contenedor, mientras que las coladas (que suelen ser más largas o tener formas irregulares) son arrastradas por el giro hacia el extremo del rodillo para ser depositadas en otro lugar. Otros sistemas emplean sensores ópticos o deflectores mecánicos instalados directamente en la banda, o incluso brazos robóticos que sujetan la colada mientras liberan la pieza, garantizando que el material de desecho se separe del producto final de manera inmediata para facilitar su reciclaje en el molino sin contaminar el lote de producción.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>tambor giratorio con brecha ajustable que permite filtrar los productos por tamaño, una estructura de altura regulable con ruedas para facilitar su movilidad entre diferentes máquinas, y un motor de velocidad variable que sincroniza la rotación con el ciclo de producción. Su construcción suele incluir materiales antiadherentes en los rodillos para evitar que el plástico caliente se pegue, junto con un diseño mecánico simple y robusto que requiere un mantenimiento mínimo, garantizando una separación eficiente y constante que optimiza el flujo de trabajo y facilita el reciclaje inmediato del material sobrante sin interrumpir la operación de la planta.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$65,000 o $90,000 MXN.</td></tr>
+                        <tr><th>Consumo de Energía</th><td>0.18 kW</td></tr>
+                        <tr><th>Compatibilidad</th><td>Salida de inyectoras.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://ieferia.interempresas.net/Plastico/Producto-Separador-de-coladas-Ati-System-SAV-214455.html>Ficha Técnica</a>
+                        <a href=https://www.inyeccionplastico.net/separador-de-coladas>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                       <img
+src="https://imgs.search.brave.com/SOMm4qWA1J7jUsrN2hZY_8XLlovpTcj3WFfqsf88QhM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/aW50ZXJlbXByZXNh/cy5uZXQvRm90b3NB/cnRQcm9kdWN0b3Mv/UDIxNDQ1NS5qcGc" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Mezclador Estático de Boquilla</h2>
+                <span class="badge">Herramental de Inyección</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong>funciona aprovechando la presión de inyección de la máquina para obligar al polímero fundido a pasar a través de una serie de elementos helicoidales o geométricos fijos alojados dentro de la boquilla, los cuales dividen, rotan y recombinan el flujo de material de manera continua. Este proceso elimina las variaciones térmicas y las concentraciones de color (vetas) sin utilizar partes móviles, ya que la geometría interna crea un flujo laminar cruzado que mezcla íntimamente los aditivos, pigmentos y el material virgen. Al homogeneizar la temperatura de la masa fundida, se logra una viscosidad uniforme en todo el frente de inyección, lo que reduce drásticamente defectos como las ráfagas, el rechupado y las variaciones de peso en la pieza, permitiendo además disminuir el porcentaje de Masterbatch utilizado y optimizar los tiempos de ciclo al obtener un enfriamiento más estable dentro del molde.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>helicoidales o de flujo cruzado fabricados en aceros de alta resistencia térmica que dividen y recombinan el flujo del polímero fundido sin necesidad de partes móviles, permitiendo una homogeneización total de la temperatura y el color en un espacio sumamente reducido. Su diseño compacto sustituye directamente a la boquilla convencional de la inyectora, operando bajo un principio de mezclado laminar que elimina puntos calientes y vetas de pigmento, además de contar con una estructura robusta capaz de soportar las altas presiones de inyección sin generar caídas de presión significativas. Al no requerir mantenimiento mecánico complejo ni energía eléctrica adicional, este dispositivo optimiza la calidad de la pieza final, reduce el consumo de aditivos y mejora la estabilidad dimensional del producto al garantizar que la viscosidad del material sea uniforme en cada disparo.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$50,000 o $75,000 MXN.</td></tr>
+                        <tr><th>Consumo de Energía</th><td>0 kW (Pasivo)</td></tr>
+                        <tr><th>Compatibilidad</th><td>Inyectoras de cualquier tonelaje.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://www.fischermex.com.mx/es-mx/products/fijaciones-quimicas/accesorios/mezclador-estatico>Ficha Técnica</a>
+                        <a href=https://www.primix.com/es/noticias/como-funciona-un-mezclador-estatico/>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                       <div class="img-placeholder">
+                       <img
+src="https://imgs.search.brave.com/NnvuDrbHqnYjHqd8o-sAPCMKijFHAq1vJBVR9zB_1Jc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzYxd1AtNWVESnhM/LmpwZw" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Tratamiento Corona</h2>
+                <span class="badge">Periférico de Acabado</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong> funciona mediante una descarga eléctrica de alta frecuencia y alto voltaje que se aplica sobre la superficie de materiales no porosos, como películas plásticas o láminas de metal, para aumentar su energía superficial y permitir la adhesión de tintas, adhesivos y recubrimientos. El proceso se genera cuando un electrodo cargado emite una descarga hacia un rodillo con conexión a tierra que sostiene el material; esta energía ioniza el aire en el pequeño espacio intermedio (gaps), creando un plasma que bombardea la superficie del polímero y rompe sus cadenas moleculares para crear puntos de unión oxidados. Al introducir grupos funcionales polares como carbonilos e hidroxilos en la superficie, el material pasa de ser químicamente inerte y repelente a ser receptivo, logrando que los líquidos se "mojen" y se distribuyan uniformemente en lugar de formar gotas, lo que garantiza que la impresión o el laminado no se desprendan durante el uso final del producto.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>descarga eléctrica de alta frecuencia (entre 10 y 30 kHz) sin alterar las propiedades estructurales del material, utilizando un sistema compuesto por un generador de potencia, un transformador de alta tensión y una estación de tratamiento con electrodos cerámicos o metálicos. Su diseño permite un ajuste preciso del nivel de dinas (energía superficial) mediante el control de la potencia aplicada, logrando que superficies inertes como el polietileno o polipropileno se vuelvan polares y receptivas a tintas o adhesivos de forma inmediata y continua en líneas de producción de alta velocidad. Además, es un proceso limpio y ecológico que no utiliza químicos ni solventes, operando de manera integrada en máquinas de extrusión, flexografía o laminación para garantizar una humectabilidad uniforme y una adherencia duradera en el producto final.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$120,000 y $380,000 MXN</td></tr>
+                        <tr><th>Consumo de Energía</th><td>2 kW - 8 kW</td></tr>
+                        <tr><th>Compatibilidad</th><td>Extrusión de película plástica.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://tantec.es/los-fundamentos-del-tratamiento-corona/>Ficha Técnica</a>
+                        <a href=https://www.elempaque.com/noticias/guia-para-principiantes-en-tratamiento-corona>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                        <img
+src="https://imgs.search.brave.com/xbJ4BX4n4BnMzUhyyzVg2uXXZMKJSTfWSUbfkuC2CJw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZWxlbXBhcXVlLmNv/bS91cGxvYWRzL25l/d3MtcGljdHVyZXMv/cHBob3RvLTMxNTEu/anBn" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Balanza de Precisión</h2>
+                <span class="badge">Herramental de Calidad</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong> funciona mediante un sensor de celda de carga con galgas extensiométricas o un sistema de restauración de fuerza electromagnética que convierte la deformación mecánica producida por el peso de un objeto en una señal eléctrica proporcional. Cuando se coloca una muestra sobre el platillo, el sensor detecta el cambio de presión y lo transforma en una variación de resistencia eléctrica o corriente, la cual es procesada por un microprocesador interno que compensa factores ambientales como la temperatura y la gravedad local para mostrar un valor digital exacto. Este equipo se distingue por su alta sensibilidad y la inclusión de una cámara de pesaje o protección contra corrientes de aire, permitiendo realizar mediciones con una resolución que típicamente alcanza los 0.001 gramos, garantizando resultados confiables y repetibles en entornos de laboratorio o control de calidad industrial donde la precisión en la formulación de materiales es crítica.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>alta sensibilidad y capacidad de lectura que generalmente alcanza los 0.001 o 0.01 gramos, integrando un sistema de pesaje digital basado en celdas de carga de alta fidelidad que garantizan una excelente repetibilidad en mediciones críticas. Su diseño suele incluir un platillo de acero inoxidable resistente a químicos, una pantalla LCD de alta visibilidad con funciones de tara y conteo de piezas, y una cámara de protección o guardapolvos que evita que las corrientes de aire interfieran con la lectura de muestras ligeras. Además, estos equipos cuentan con sistemas de calibración interna o externa, burbujas de nivelación ajustables y filtros digitales configurables para compensar vibraciones en el entorno industrial, lo que las convierte en herramientas fundamentales para el pesaje de pigmentos, aditivos y muestras de polímeros en laboratorios de control de calidad.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$25,000 y $55,000 MXN,</td></tr>
+                        <tr><th>Consumo de Energía</th><td>0.05 kW</td></tr>
+                        <tr><th>Compatibilidad</th><td>Laboratorio de calidad y control de peso en planta.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://www.pce-iberica.es/medidor-detalles-tecnicos/balanzas/balanza-precision-pce-ls.htm>Ficha Técnica</a>
+                        <a href=https://www.kern-sohn.com/manuals/files/Spanish/ARS_ARJ_PRS_PRJ-BA-s-0622.pdf>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                        <img
+src="https://imgs.search.brave.com/QUTAh5RQklInarWL7nYTGRdj43orx-4db13b5Z-sWKY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YmFsYW56YXNnYWxp/Y2lhLmNvbS9wdWIv/bWVkaWEvY2F0YWxv/Zy9wcm9kdWN0L2Nh/Y2hlLzU3YzdhYTdj/YmZmYjNjODExNjI0/YjYwNjYwODMzYjQy/L2IvYS9iYWxhbnph/LWJhci1kZS1iYXh0/cmFuLS5qcGc" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Imán de Cajón </h2>
+                <span class="badge">Herramental de Protección</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong>funciona mediante la creación de un campo magnético de alta intensidad a través del cual debe pasar el material plástico (en pellets o molido) antes de entrar a la garganta de la inyectora o extrusora. El equipo consta de una carcasa de acero inoxidable que alberga varias filas de tubos magnéticos dispuestos de forma alternada o escalonada; cuando el material cae por gravedad, los imanes atrapan y retienen partículas ferrosas, virutas metálicas o clavos que podrían estar mezclados con la resina. Al capturar estos contaminantes, el imán de cajón actúa como un escudo protector para el husillo y el cilindro, evitando rayaduras internas, obstrucciones en las boquillas y daños costosos en las cavidades de los moldes. Su diseño de cajón deslizable permite que el operario extraiga las rejillas magnéticas periódicamente para limpiarlas manualmente, asegurando que el flujo de material permanezca libre de metales que comprometan la calidad de la pieza final o la integridad de la maquinaria.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>acero inoxidable y la disposición estratégica de sus tubos magnéticos en hileras escalonadas, lo que obliga al material a tener un contacto directo con el campo magnético para asegurar la captura total de impurezas ferrosas. Estos equipos cuentan con imanes de alta potencia, como los de Neodimio (Tierras Raras), capaces de retener partículas microscópicas de metal, y están diseñados con una carcasa hermética que evita fugas de material o entrada de contaminantes externos. Su principal característica operativa es el diseño de fácil limpieza, que permite extraer las rejillas mediante un sistema de cajón deslizable sin necesidad de desmontar toda la tolva, optimizando los tiempos de mantenimiento. Además, suelen incluir visores de policarbonato para inspeccionar el flujo de resina en tiempo real y son adaptables a diferentes tamaños de gargantas de máquinas inyectoras o extrusoras, lo que los convierte en una solución versátil y esencial para proteger la vida útil del husillo y los moldes.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$30,000 o $55,000 MXN.</td></tr>
+                        <tr><th>Consumo de Energía</th><td>0 kW (Pasivo)</td></tr>
+                        <tr><th>Compatibilidad</th><td>Entrada de alimentación de inyectoras y extrusoras.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://buntingmagnetics.com/product/magnetic-separation/drawer-filter/hf-drawer>Ficha Técnica</a>
+                        <a href=https://es.greatmagtech.com/info/drawer-magnets-quality-safety-guide-17237048599962624.html>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                        <img
+src="https://imgs.search.brave.com/5qM-oQyqYuN9BmjBvCetsp9RqSba_Wnol_7D9M6V87Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly80NjI1/NjU2My5mczEuaHVi/c3BvdHVzZXJjb250/ZW50LW5hMS5uZXQv/aHViLzQ2MjU2NTYz/L2h1YmZzL3dlYnNp/dGUtMjAyNS9CdW50/aW5nKy0rSEYrRHJh/d2VyKy0rVG9wK0Fu/Z2xlK1ZpZXctMTky/MHcucG5nP3dpZHRo/PTMwMCZuYW1lPUJ1/bnRpbmcrLStIRitE/cmF3ZXIrLStUb3Ar/QW5nbGUrVmlldy0x/OTIwdy5wbmc" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="item-card">
+            <div class="item-title">
+                <h2>Unidad de Limpieza de Molde</h2>
+                <span class="badge">Periférico de Mantenimiento</span>
+            </div>
+            <div class="item-body">
+                <div class="item-info">
+                    <div class="description-box">
+                        <strong>¿Cómo funciona?:</strong>funciona mediante el soplado continuo de un flujo de aire deshumidificado y filtrado hacia el área de las cavidades, creando una atmósfera de presión positiva que impide que la humedad ambiental se condense sobre las superficies frías del metal. Al operar con moldes que utilizan agua helada (Chiller) a temperaturas muy bajas para reducir el tiempo de ciclo, la diferencia térmica con el aire del taller provocaría la formación de gotas de agua (condensación), lo cual genera manchas en las piezas plásticas, oxidación en el molde y defectos de calidad. La unidad toma el aire del entorno, lo pasa por un sistema de enfriamiento y desecante para eliminar el vapor de agua, y luego lo proyecta de manera constante alrededor del molde abierto o dentro del cerramiento de la máquina, garantizando que el "punto de rocío" se mantenga siempre por debajo de la temperatura de la cara del molde. De esta manera, el equipo permite trabajar a temperaturas de enfriamiento extremas sin interrupciones, optimizando la productividad y protegiendo la integridad de los herramentales de precisión contra la corrosión.
+                    </div>
+                    <table>
+                        <tr><th>Características</th><td>capacidad para generar un flujo constante de aire deshumidificado con un punto de rocío de hasta -20°C, utilizando una rueda desecante o sistemas de refrigeración para eliminar la humedad ambiental antes de que entre en contacto con el herramental frío. Su diseño portátil y compacto permite una integración sencilla en diversas máquinas inyectoras, empleando mangueras flexibles y boquillas de distribución que presurizan el área de las platinas para crear un microclima seco y libre de contaminantes gracias a sus filtros de alta eficiencia. Además, estos equipos cuentan con sistemas de control automático que monitorean la temperatura y humedad en tiempo real, garantizando una operación continua que previene la oxidación de los componentes móviles del molde, como botadores y correderas, y elimina defectos visuales en las piezas plásticas causados por la condensación.</td></tr>
+                        <tr><th>Costo Estimado</th><td>$140,000 a $320,000 MXN</td></tr>
+                        <tr><th>Consumo de Energía</th><td>1.5 kW</td></tr>
+                        <tr><th>Compatibilidad</th><td>Mantenimiento preventivo de moldes.</td></tr>
+                    </table>
+                    <div class="action-btns">
+                        <a href=https://www.itelspain.com/tienda/mostrar_categoria/fichas-tecnicas-de-limpiezas-generales/39/11>Ficha Técnica</a>
+                        <a href=https://www.pt-mexico.com/articulos/limpieza-del-molde-en-la-mquina>Manual</a>
+                    </div>
+                </div>
+                <div class="item-visual">
+                    <div class="img-placeholder">
+                       <img
+src="https://imgs.search.brave.com/odXpdcH4jciocFU8g2PS9gowP-w-kKJNziFX5I_HHpc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/a2VtZXQtaW50ZXJu/YXRpb25hbC5jb20v/aW1hZ2VzL2pjaC1v/cHRpbWl6ZS9uZy9p/bWFnZXNfY2xlYW5p/bmdfbW91bGQtZGll/LXRvb2wtY2xlYW5p/bmcud2VicA" 
+             alt="Peletizadora" 
+             style="width:100%; height:200px; object-fit:contain; border-radius:8px;">
+
+
+                        <br>
+                        <em>Vista previa del equipo</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <div class="footer">
+        © 2026 Catálogo Técnico Industrial - IPN CECyT 8 "Narciso Bassols" - By. José Alfredo Pérez Escutia
+    </div>
+</body>
+</html>
